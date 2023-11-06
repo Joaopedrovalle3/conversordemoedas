@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASH NOW CAMBIO</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../static/css/cashnowcss.css" >
+
+</head>
+<body>
+
+    <!--CABEÇALHO-->
+    <header id="cabecalho">
+        <div id="titulo-principal">
+            <h1>Cash Now Câmbio</h1>
+            <p>Serviços de câmbio com segurança e agilidade</p>
+            <img src="../static/css/Imagens/G03removebgpreview.png" id="logo" alt="logo">
+        </div>
+    </header>
+
+
+    <!--SEÇÃO 1-->
+    <section id="areas">
+        <h2>Câmbio confiável!</h2>
+        <div class="itens">
+            <div class="item">
+                <div id="item1" class="item-img"></div>
+            </div>
+
+            <div class="item">
+                <div id="item2" class="item-img"></div>
+            </div>
+
+            <!-- <div class="item">
+                <div id="item3" class="item-img"></div>
+                <p>Nosso Endereço</p>
+            </div> -->
+        </div>
+
+
+    </section>
+<br>
+    <!--SEÇÃO 2-->
+    <section id="formulario">
+        <div id="formulario-cadastro">
+            <p>Faça sua cotação online e entre em contato conosco!</p>
+            
+            <form>
+
+                <div class="grupo-form">
+                    <label for="moeda-origem">De:</label>
+                    <input type="text" name="moeda_origem" minlength="3" maxlength="3" placeholder="Digite o código da moeda de origem"> <p> {{ moeda_origem }} </p>
+                </div>
+                <div class="grupo-form">
+                    <label for="valor"></label>
+                    <input type="number" name="valor" placeholder="Digite o valor a ser convertido"> <p> {{ valor }} </p>
+                </div>
+                <div class="grupo-form">
+                    <label for="moeda-destino">Para:</label>
+                    <input type="text" name="moeda_destino" minlength="3" maxlength="3" placeholder="Digite o código da moeda de destino"> <p> {{ moeda_destino }} </p>
+                </div>
+                <div class="grupo-form">
+                    <p id="display">{% if valor_convertido is not none %}{{ valor_convertido }}</p>
+    {% endif %}
+
+                </div>
+
+                <input type="submit" class="botao" value="Converter">
+            </form>
+        </div>
+    </section>
+<br>
+    <!--RODAPÉ-->
+    <footer id="rodape">
+        <p>Nossos contatos</p>
+        <p>Endereço: Av Rio Branco, 505 - Centro - Rio de Janeiro</p>
+        <p>Telefones: (55 21) 2285-7106 / 2285-7107</p>
+        <p>E-mail: cambio@cashnow.com.br</p>
+        <br>
+        <marquee><h5>&copy; 2023. Todos os direitos reservados a Cash Now Câmbio Ltda.</h5></marquee>
+    </footer>
+
+</body>

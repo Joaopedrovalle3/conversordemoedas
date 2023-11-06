@@ -1,0 +1,158 @@
+*{font-family: Playfair Display;}
+
+:root{
+    --corPrincipal: rgb(224, 224, 117);
+    --corSecundaria: black;
+    --corTexto1: rgb(183, 54, 25);
+}
+
+#cabecalho {
+    background: var(--corSecundaria);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    /* background-repeat: no-repeat; */
+    justify-content: space-around; /*igualmente espaçado em relação às bordas*/
+    color: var(--corPrincipal);
+    padding: 2em;
+    display: grid; /*permite manipular os elementos filhos*/
+    place-items: center;
+      
+}
+
+#logo {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    right: 450px;
+    bottom: 100px;
+    
+    
+}
+
+#areas {
+    background-color: var(--corPrincipal); /*adiciona cor de fundo*/
+    background-size: cover;
+}
+
+h2 {
+    text-align: center; /*alinhamento ao centro*/
+    padding: 2em; /*para afastar o texto das bordas*/
+    font-weight: 500;
+    color: var(--corSecundaria);
+}
+
+.itens {
+    display: flex; /*possibilita a estilização dos itens um ao lado do outro*/
+    justify-content: space-around; /*realiza a separação dos meus itens de forma igual*/
+    padding: 4em; /*distanciamento dos cantos da div*/
+    width: 80%; /*define a largura da área útil*/
+    margin: 0 auto; /* o auto faz centralizar o conteúdo*/
+}
+
+.item {
+    text-align: center;
+    display: flex; /*define a disposição dos elementos na página, se fica um em cima do outro,
+    um do lado do outro, etc*/
+    flex-direction: column; /*define imagem em cima e texto embaixo*/
+    align-items: center;
+    max-width: 20%;
+    color: var(--corSecundaria);
+}
+
+.item .item-img {
+    width: 300px; /*definição de largura*/
+    height: 300px; /*definição de altura*/
+    /* background-size: cover;
+    background-color: aquamarine;
+    background-position: center;  */
+    margin-bottom: 1em; /*para afastar a imagem do texto*/
+    border-radius: 30%; /*arredondamento das bordas do elemento*/
+}
+
+
+#item1 {
+    background-image: url(Imagens/Taxa-de-cambio-e1672841827544.webp);
+
+}
+
+#item2 {
+    background-image: url(Imagens/gettyimages-184405133.jpg);
+
+}
+
+
+#formulario {
+    background-color: var(--corPrincipal);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+    margin: auto;
+
+}
+
+
+#formulario-cadastro{
+    background-color: var(--corTexto1);
+    padding: 2em;
+    max-width: 30%;
+}
+
+#formulario-cadastro p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    font-weight: bold
+}
+
+.grupo-form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em
+}
+
+.grupo-form label {
+    color: var(--corSecundaria);
+    margin-bottom: 0.3em;
+    font-weight: bold
+}
+
+.grupo-form input, .grupo-form select{
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none; /*remove a linha ao redor do campo*/
+}
+
+#display{
+    background-color: white;
+    padding: 6px 8px;
+    height: 24px;
+    border-radius: 5px;
+    border: none;
+    outline: none; /*remove a linha ao redor do campo*/
+}
+
+.botao {
+    background-color: var(--corPrincipal);
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    padding: 1.2px;
+    cursor: pointer; /*aciona a mãozinha ao passar o mouse no botão*/
+    opacity: 0.5px;
+}
+
+.botao.hover { /*ao passar o cursor por cima do botão*/
+    opacity: 1px;
+}
+
+#rodape {
+    background-color: var(--corSecundaria);
+    background-size: cover;
+    color: var(--corPrincipal);
+    padding: 2em;
+}
+
+
